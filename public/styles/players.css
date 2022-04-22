@@ -1,0 +1,93 @@
+body {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #aaaaaa;
+}
+
+form {
+   background-color: #555555;
+   padding: 0.8em;
+   position: relative;
+   border-radius: 0.5em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 0.5em;
+   box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.5);
+}
+
+form .submit {
+   position: absolute;
+   background-color: #640000;
+   line-height: 0;
+   padding: 0.3em;
+   border: none;
+   border-radius: 0.25em;
+   bottom: -50px;
+   cursor: pointer;
+}
+
+form .submit img {
+   height: 30px;
+   width: 40px;
+}
+
+.player {
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+}
+
+input {
+   border: none;
+   border-radius: 0.25em;
+   padding: 0.5em;
+}
+
+.mod {
+   text-align: center;
+   width: 50px;
+   background-color: #aa4444;
+   color: white;
+   font-weight: bold;
+   cursor: default;
+}
+
+.result {
+   text-align: center;
+   width: 50px;
+   background-color: #acecff;
+   font-weight: bold;
+   cursor: default;
+}
+
+.player button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   background-color: rgb(108, 149, 209);
+   border: none;
+   padding: 0.1em;
+   border-radius: 0.15em;
+   font-size: 1.8em;
+   color: white;
+   line-height: 0;
+   cursor: pointer;
+   right: -40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+   -moz-appearance: textfield;
+}

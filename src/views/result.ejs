@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <%- include('parts/head', {title: 'Resultado'}) %>
+      <link rel="stylesheet" href="styles/result.css" />
+   </head>
+   <body>
+      <div>
+         <h3>Ordem de ataque</h3>
+         <% player_spread.forEach(player => { %>
+         <p><%= player %></p>
+         <% }) %>
+      </div>
+   </body>
+</html>

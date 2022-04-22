@@ -1,0 +1,61 @@
+body {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #aaaaaa;
+}
+
+form {
+   background-color: #555555;
+   padding: 1.5em;
+   position: relative;
+   border-radius: 0.5em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 0.8em;
+   box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.5);
+}
+
+form input {
+   display: inline;
+   border: none;
+   border-radius: 0.25em;
+   padding: 0.5em;
+}
+
+form input:nth-child(2) {
+   text-align: center;
+   width: 50px;
+   background-color: #aa4444;
+   color: white;
+   font-weight: bold;
+}
+
+form button {
+   position: absolute;
+   padding: 0;
+   background-color: #44aa44;
+   border: none;
+   border-radius: 0 0.15em 0.15em 0em;
+   font-size: 2.5em;
+   color: white;
+   line-height: 0;
+   cursor: pointer;
+   top: 45%;
+   right: -45px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+   -moz-appearance: textfield;
+}

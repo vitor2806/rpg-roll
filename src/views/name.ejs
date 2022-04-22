@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <%- include('parts/head', {title: 'Nomes'}) %>
+      <link rel="stylesheet" href="styles/name.css" />
+   </head>
+   <body>
+      <form action="/players" method="post">
+         <% for(i = 0; i < form; i++) { %>
+
+         <div class="player">
+            <input
+               type="text"
+               name="player<%= i %>"
+               placeholder="Nome"
+               class="form"
+            />
+            <input
+               type="number"
+               name="mod<%= i %>"
+               id="mod<%= i %>"
+               placeholder="Mod"
+            />
+         </div>
+
+         <% } %>
+         <button><i class="bx bx-right-arrow-alt"></i></button>
+      </form>
+   </body>
+</html>

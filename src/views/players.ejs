@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <%- include('parts/head', {title: 'Nomes'}) %>
+      <link rel="stylesheet" href="styles/players.css" />
+      <script src="scripts/roll.js" defer></script>
+   </head>
+   <body>
+      <form action="/players/result" method="post">
+         <% Object.keys(players).forEach((key) => { %>
+         <div class="player">
+            <input
+               type="text"
+               value="<%= key %>"
+               name="name"
+               readonly
+               class="form-control"
+            />
+            <input
+               type="number"
+               value="<%= players[key] %>"
+               name="mod"
+               id="<%= key %>-mod"
+               readonly
+               class="mod"
+               title="Dex"
+            />
+            <button type="button" id="<%= key %>" onclick="Util.get(id)">
+               <i class="bx bxs-dice-6"></i>
+            </button>
+            <input
+               type="number"
+               name="result"
+               id="<%= key %>-result"
+               readonly
+               class="result"
+               title="Resultado"
+            />
+         </div>
+         <% }) %>
+         <button class="submit">
+            <img src="images/sword.svg" alt="crossed swords" />
+         </button>
+      </form>
+   </body>
+</html>
